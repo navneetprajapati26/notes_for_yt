@@ -31,10 +31,16 @@ class Baner extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(height: 60,),
-              Container(
-                  height: 200,
-                  width: 200,
-                  child: Lottie.asset("assets/polite_chicky.json")),
+              Column(
+                children: [
+                  SizedBox(height: 60,),
+                  Container(
+                      height: 100,
+                      width: 100,
+                      child: Lottie.asset("assets/polite_chicky.json")),
+                ],
+              ),
+              SizedBox(width: 100,),
               Container(
                   height: 200,
                   width: 200,
